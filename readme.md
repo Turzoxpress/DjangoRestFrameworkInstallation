@@ -1,4 +1,6 @@
-# How to install Python **Django REST framework** for a **REST API** project?
+![Alt Python Django](/screenshots/api_screenshot.gif "Python Django")
+
+## How to install Python **Django REST framework** for a **REST API** project?
 Make sure you have python 3 installed on your machine. This tutorial will be covered based on Ubuntu 20 Operating System. <br>
 
 ![Alt Django REST framework](/screenshots/logo.png "Django REST framework")
@@ -79,6 +81,10 @@ Now open your browser and copy and paste the link **http://127.0.0.1:8000/** or 
 
 ![Alt text](/screenshots/_django_installation.JPG "Python Django")
 
+## Now, we have to install **Django Rest Framework** 
+#### Django REST framework is a powerful and flexible toolkit for building Web APIs.
+
+[Django REST framework](https://www.django-rest-framework.org/) 
 
 * Create an app <br>
 
@@ -86,13 +92,6 @@ Now open your browser and copy and paste the link **http://127.0.0.1:8000/** or 
   django-admin startapp my_rest_api_app
 ```
 
-## Now, we have to install Django Rest Framework
-
-
-
-Django REST framework is a powerful and flexible toolkit for building Web APIs.
-
-[Django REST framework](https://www.django-rest-framework.org/) 
 
 * Install the main framework <br>
 
@@ -125,7 +124,7 @@ Django REST framework is a powerful and flexible toolkit for building Web APIs.
 
 ![Alt djangorestframework](/screenshots/s2.JPG "djangorestframework")
 
-* We'll also create an initial user named admin with a password of password123. We'll authenticate as that user later in our example <br>
+* We'll also create an initial user named **turzo** with a password of **12345678**. We'll authenticate as that user later in our example <br>
 
 ```python 
   python3  manage.py createsuperuser --email turzoxpress@gmail.com --username turzo
@@ -210,7 +209,7 @@ REST_FRAMEWORK = {
   
 ```
 
-* Add 'rest_framework' and your **app name** to INSTALLED_APPS. The settings module will be in **my_project/settings.py** <br>
+* Add your **app name** to INSTALLED_APPS. The settings module will be in **my_project/settings.py** <br>
 
 ```python 
 INSTALLED_APPS = [
@@ -241,7 +240,7 @@ INSTALLED_APPS = [
 
 ```
 username : turzo
-password : 123456 
+password : 12345678 
 
 ```
 
